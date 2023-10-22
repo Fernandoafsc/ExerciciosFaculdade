@@ -1,7 +1,8 @@
-/* Ler dois valores e realiza operação aritimética de acordo com a escolha do usuário.*/
+
 #include<stdio.h>
 #include<stdlib.h>
 #include<locale.h>
+/* Ler dois valores e realiza operação aritimética de acordo com a escolha do usuário.*/
 /*
 Universidade Veiga de Almeida
 Aluno: Augusto Fernando Santos de Carvalho 
@@ -138,11 +139,11 @@ int menu(){
         printf("Opção invalida, quer tentar novamente? [s] ou [n]. \n\n\n");
         scanf("%s", &selecionar);
 
-        if (selecionar == 's' || selecionar == 'S')
+        if (selecionar == 's' || selecionar == 'S')// Retorna ao menu
         {                           
             menu();
         }
-        else if ( selecionar == 'n' || selecionar == 'N')
+        else if ( selecionar == 'n' || selecionar == 'N')// Limpa a tela
         {
             system("cls");
             printf("\n\n\n\n Obrigado por usar nossa calculadora! Até a próxima....\n\n\n\n");
@@ -155,7 +156,7 @@ int menu(){
 
 int main(int argc, char const *argv[])
 {
-    setlocale (LC_ALL, "Portuguese_Brazil");
+    setlocale (LC_ALL, "Portuguese_Brazil"); // Exibe ps caracteres como acentuação, etc.
     menu();
     system("pause");
     return 0;
