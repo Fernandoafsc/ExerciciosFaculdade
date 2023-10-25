@@ -1,13 +1,14 @@
+/* Ler dois valores e realiza operação aritimética de acordo com a escolha do usuário.
 
-#include<stdio.h>
-#include<stdlib.h>
-#include<locale.h>
-/* Ler dois valores e realiza operação aritimética de acordo com a escolha do usuário.*/
-/*
 Universidade Veiga de Almeida
 Aluno: Augusto Fernando Santos de Carvalho 
 Análise e Desenvolvimento de Sistema
 */
+
+#include<stdio.h>
+#include<stdlib.h>
+#include<locale.h>
+
 
 //Função de Soma
 void soma(){
