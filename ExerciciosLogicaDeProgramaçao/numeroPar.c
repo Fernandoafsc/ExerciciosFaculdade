@@ -1,32 +1,31 @@
-/* ?O usuário realiza a digitação de dois números (número inicial e número final).
-    E através de uma estrutura de repetição, verifica se os números alimentados são pares
-    ou ímpares, retornando o status se são pares ou ímpares.?
+/* ?O usuï¿½rio realiza a digitaï¿½ï¿½o de dois nï¿½meros (nï¿½mero inicial e nï¿½mero final).
+    E atravï¿½s de uma estrutura de repetiï¿½ï¿½o, verifica se os nï¿½meros alimentados sï¿½o pares
+    ou ï¿½mpares, retornando o status se sï¿½o pares ou ï¿½mpares.?
 */
 #include<stdio.h>
 #include<stdlib.h>
 #include<locale.h>
 
-
-int main(int argc, char const *argv[])
+int main()
 {
     setlocale(LC_ALL,"Portuguese_Brazil");
 
     int valor1, valor2, i;
 
-    printf("Digite um número inicial: ");
+    printf("Digite um nï¿½mero inicial: ");
     scanf("%d", &valor1);
-    printf("Digite um número final: ");
+    printf("Digite um nï¿½mero final: ");
     scanf("%d", &valor2);
 
     for (i = valor1; i <= valor2; i++){
   
     if (i % 2 == 0)
     {
-        printf("O número %d é PAR \n", i);
+        printf("O nï¿½mero %d ï¿½ PAR \n", i);
     }
     else if (i % 2 != 0)
     {
-        printf("O número %d é ÍMPAR\n", i);
+        printf("O nï¿½mero %d ï¿½ ï¿½MPAR\n", i);
     }
     }
     
