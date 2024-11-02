@@ -37,7 +37,7 @@ void atualizar(No* cabeca, int dadoAntigo, int dadoNovo) {
         }
         atual = atual->proximo;
     }
-    printf("Valor %d não encontrado.\n", dadoAntigo);
+    printf("Valor %d nao encontrado.\n", dadoAntigo);
 }
 
 // Função para remover um elemento da lista
@@ -58,7 +58,7 @@ void remover(No** cabeca, int dado) {
     }
 
     if (temp == NULL) {
-        printf("Valor %d não encontrado.\n", dado);
+        printf("Valor %d nao encontrado.\n", dado);
         return;
     }
 
@@ -68,20 +68,20 @@ void remover(No** cabeca, int dado) {
 }
 
 int main() {
-    // Configuração para aceitar caracteres especiais
-    setlocale(LC_ALL, "Portuguese_Brazil");
+    // Configuração para aceitar caracteres especiais e definir a localidade
+    setlocale(LC_ALL, "Portuguese_Brazil.1252");
 
     No* cabeca = NULL;
     int opcao, dado, dadoAntigo, dadoNovo;
 
     while (1) {
-        printf("\nEscolha uma operação:\n");
+        printf("\nEscolha uma operacao:\n");
         printf("1. Inserir\n");
         printf("2. Consultar\n");
         printf("3. Alterar\n");
         printf("4. Remover\n");
         printf("5. Sair\n");
-        printf("Opção: ");
+        printf("Opcao: ");
         scanf("%d", &opcao);
 
         switch (opcao) {
@@ -110,7 +110,7 @@ int main() {
                 printf("Saindo...\n");
                 return 0;
             default:
-                printf("Opção inválida!\n");
+                printf("Opcao invalida!\n");
         }
     }
 }
